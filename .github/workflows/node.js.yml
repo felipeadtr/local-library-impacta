@@ -55,7 +55,8 @@ jobs:
       
       - name: Push code to Heroku
         run: git push heroku main
-   deploy-producao:
+   
+  deploy-producao:
     runs-on: ubuntu-latest
     env:
       DB_URI: $${{ secrets.DB_URI }}
