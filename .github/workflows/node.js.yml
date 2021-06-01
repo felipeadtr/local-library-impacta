@@ -62,7 +62,7 @@ jobs:
       DB_URI: $${{ secrets.DB_URI }}
       NODE_ENV: production
       
- needs: [deploy-homologacao]
+  needs: [deploy-homologacao]
   enviroments: producao
     steps:
       - name: Checkout Code
